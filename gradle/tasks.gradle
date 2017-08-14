@@ -1,0 +1,24 @@
+configurations {
+    kotlinRuntime
+}
+
+dependencies {
+    kotlinRuntime "org.jetbrains.kotlin:kotlin-runtime:$kotlin_version"
+}
+
+def kotlinClassPath = configurations.kotlinRuntime + sourceSets.main.runtimeClasspath
+
+task helloWorld(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'helloWorld.HelloWorldKt'
+}
+
+task importPythagorean(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'importsAndPackages.ImportPythagoreanKt'
+}
+
+task sets(type: JavaExec) {
+    classpath kotlinClassPath
+    main = 'sets.MutableSetKt'
+}
