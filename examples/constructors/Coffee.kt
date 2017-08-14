@@ -1,19 +1,16 @@
 package constructors
 
-import com.atomickotlin.test.eq
+import atomicTest.eq
 
 class Coffee(
     val shots: Int = 2,
     val decaf: Boolean = false,
     val milk: Boolean = false,
     val toGo: Boolean = false,
-    val syrup: String = ""
-) {
+    val syrup: String = "") {
   var result = ""
-
   init {
     println(listOf(shots, decaf, milk, toGo, syrup))
-
     getCup()
     pourShots()
     addMilk()

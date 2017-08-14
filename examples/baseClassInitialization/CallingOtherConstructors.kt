@@ -1,6 +1,5 @@
-package baseClassInitialization
-
-import com.atomickotlin.test.eq
+package baseclassinit
+import atomicTest.eq
 
 open class Base(val i: Int)
 

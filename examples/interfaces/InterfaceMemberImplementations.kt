@@ -1,6 +1,5 @@
-package interfaces
-
-import com.atomickotlin.test.eq
+package interfaces3
+import atomicTest.eq
 
 interface Animal {
   val sound: String

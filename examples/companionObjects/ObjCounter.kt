@@ -1,6 +1,6 @@
 package companionobjects
 
-import com.atomickotlin.test.eq
+import atomicTest.eq
 
 class Count {
   val id = Count.id()
@@ -17,6 +17,6 @@ class Count {
 
 fun main(args: Array<String>) {
   listOf(Count(), Count(), Count(),
-      Count(), Count()) eq
-      "[Count0, Count1, Count2, Count3, Count4]"
+    Count(), Count()) eq
+    "[Count0, Count1, Count2, Count3, Count4]"
 }

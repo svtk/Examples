@@ -1,6 +1,5 @@
-package extensionFunctions
-
-import com.atomickotlin.test.eq
+package quoting
+import atomicTest.eq
 import quoting.doubleQuote
 import quoting.singleQuote
 

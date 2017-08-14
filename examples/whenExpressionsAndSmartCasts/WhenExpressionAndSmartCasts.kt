@@ -1,6 +1,5 @@
-package whenExpressionsAndSmartCasts
-
-import com.atomickotlin.test.eq
+package whenexpressionscasts
+import atomicTest.eq
 
 fun acceptAnything(x: Any): String =
     when (x) {
